@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Edit</title>
+	<link rel="stylesheet" type="text/css" href="/style1.css">
+</head>
+<body>
+	<div class="top">Blog</div>
+	<div class='panel'>
+		<a href="/">Home</a>
+		<a href="/profile">Profile</a>
+		<a href="/search">Search</a>
+		<form action="/logout" method="POST">
+  			<button type="submit">Log Out</button>
+		</form>
+	</div>
+	<div class="changes">
+		<h2>Edit Article</h2>
+		<form action="/edit/<%=article.id%>" method="POST">
+			<label>Title</label>
+			<input required type="text" name="title" value='<%= article.title %>' >
+			<label>Description</label>
+  			<textarea name="description"> <%=article.description%> </textarea>
+  			<label>Content</label>
+  			<textarea name="content"> <%=article.content%> </textarea><br>
+  			<a href="/">Cancel</a>
+  			<button type="submit">Save</button>
+		</form>
+	</div>
+</body>
+</html>

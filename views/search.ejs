@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Search</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+	<div class="top">Blog</div>
+	<div class='panel'>
+		<a href="/">Home</a>
+		<a href="/profile">Profile</a>
+		<a href="/add">New Post</a>
+		<form action="/logout" method="POST">
+  			<button type="submit">Log Out</button>
+		</form>
+	</div>
+	<div class='search'>
+		<form action='/search' method="POST">
+			<input required type="text" name="username" placeholder="Enter username" >
+			<button type="submit">Search</button>
+		</form>
+	</div>
+	<div class='searched'>
+		<% if(username!=''){if(username!=null){%>
+		<div><%=username%> does not exist</div>
+		<%}else if (account!=null){%>
+		<div>
+			<a href="/profile/<%=account.username%>"><%=account.username%></a>
+		</div>
+		<%}}%>	
+	</div>
+</body>
+</html>

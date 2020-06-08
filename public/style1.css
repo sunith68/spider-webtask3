@@ -1,0 +1,107 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.top{
+	background: #0402a2;
+	color: white;
+	font-size: 45px;
+	text-align: center;
+	padding: 20px 0px;
+}
+
+.panel{
+	font-size: 24px;
+	background: #040282;
+	color: white;
+	padding: 5px 70px;
+}
+.panel a{
+	color: white;
+	padding:2px 10px;
+}
+.article{
+	font-size: 25px;
+	width: 70vw;
+	text-align: center;
+	margin: auto;
+	margin-top: 20px;
+}
+.article div{
+	margin-bottom: 10px;
+}
+.article a{
+	font-size: 18px;
+	border: 1px solid #9090cc;
+	border-radius: 6px;
+	padding: 2px;
+	background: #a0a0ff;
+	color: yellow;
+}
+a{
+	text-decoration: none;
+}
+form{
+	display: inline-block;
+}
+.panel form{
+	float: right;
+}
+.panel button{
+	font-size: 22px;
+	display: inline-block;
+	color:white;
+	background: #040282;
+	border:none;
+	
+}
+button:hover{
+	cursor: pointer;
+}
+.sign{
+	margin:auto;
+	width:0.5vw;
+	
+	padding: 15px 20px;
+	font-size: 20px;
+	text-align: center;
+}
+.sign legend{
+	font-size: 30px;
+}
+.search{
+	font-size: 24px;
+	text-align: center;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 18px;
+}
+.searched{
+	font-size: 24px;
+	margin: auto;
+	text-align: center;
+}
+.changes{
+	text-align: center;
+	margin:auto;
+	margin-top:15px;
+}
+.changes label{
+	font-size: 20px;
+	display: block;
+}
+.changes input{
+	font-size: 15px;
+	width: 60vw;
+	display: block;
+}
+.changes textarea{
+	width:70vw;
+}
+.read{
+	margin:auto;
+	text-align: center;
+	margin-top: 15px;
+	font-size: 18px;
+}
