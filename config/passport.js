@@ -8,7 +8,6 @@ function initialize(passport) {
     if (user == null) {
       return done(null, false, { message: 'No user found' })
     }
-    console.log(password, user.password);
     try {
       if (await bcrypt.compare(password, user.password)) {
         return done(null, user)
