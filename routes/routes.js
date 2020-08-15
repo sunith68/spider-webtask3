@@ -33,7 +33,7 @@ router.post('/signup', checkNotAuthenticated, async (req, res) => {
 		req.flash('error','Username already exists')
 		res.redirect('/signup');
 	}
-	if(req.username.indexOf('')>0){
+	if(req.body.username.indexOf(' ')>0){
 		req.flash('error','Username should not contain spaces')
 		res.redirect('/signup');
 	}
